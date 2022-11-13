@@ -1,0 +1,40 @@
+﻿Mongolian,English
+Мөнгө түүнтэй адилтгах хөрөнгө, Cash and cash equivalents
+Дансны авлага,Accounts receivables
+"Татвар, НДШ – ийн авлага",Tax receivable
+Бусад авлага,Other receivables
+Бусад санхүүгийн хөрөнгө,Other short-term asset
+Бараа материал,Inventory
+Урьдчилж төлсөн зардал/тооцоо,Prepaid expense
+Бусад эргэлтийн хөрөнгө,Other current asset
+Борлуулах зорилгоор эзэмшиж буй эргэлтийн бус хөрөнгө (борлуулах бүлэг хөрөнгө),SDS
+Эргэлтийн хөрөнгийн дүн,Total current assets
+Үндсэн хөрөнгө,PPE
+Биет бус хөрөнгө,Intangible asset
+Биологийн хөрөнгө,Biological asset
+Урт хугацаат  хөрөнгө оруулалт,Long-term investment
+Хойшлогдсон татварын хөрөнгө,Deferred tax
+Бусад эргэлтийн бус хөрөнгө,Other non-current asset
+Эргэлтийн бус хөрөнгийн дүн,Total non-current asset
+Нийт хөрөнгийн дүн,Total asset
+Дансны өглөг,Accounts payable
+Цалингийн  өглөг,Salaries payable
+Татварын өр,Tax payable
+НДШ - ийн  өглөг,Social securities payable
+Богино хугацаат зээл,Short-term debt
+Хүүний  өглөг,Interest payable
+Ногдол ашгийн  өглөг,Dividend payable
+Урьдчилж орсон орлого,Unearned revenue
+Бусад богино хугацаат өр төлбөр,Other short-term liabilities
+Богино хугацаат өр төлбөрийн дүн,Total short-term liabilities
+Урт хугацаат зээл,Long-term debt
+Хойшлогдсон татварын өр,Deferred income tax
+Бусад урт хугацаат өр төлбөр,Other long-term liabilities
+Урт хугацаат өр төлбөрийн дүн,Total long-term liabilities
+Өр төлбөрийн нийт дүн,Total liabilities
+Өмч,Equity
+    -хувийн,Common stock
+Хөрөнгийн дахин үнэлгээний нэмэгдэл,Diluted stocks
+Хуримтлагдсан ашиг,Retained earnings
+Эздийн өмчийн дүн,Stockholders equity
+Өр төлбөр ба эздийн өмчийн дүн,Total liabilities and stockholders equity}
