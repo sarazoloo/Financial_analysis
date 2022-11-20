@@ -1,5 +1,5 @@
 ﻿Mongolian,English
-Мөнгө түүнтэй адилтгах хөрөнгө, Cash and cash equivalents
+"Мөнгө,түүнтэй адилтгах хөрөнгө",Cash and cash equivalents
 Дансны авлага,Accounts receivables
 "Татвар, НДШ – ийн авлага",Tax receivable
 Бусад авлага,Other receivables
@@ -26,7 +26,7 @@
 Ногдол ашгийн  өглөг,Dividend payable
 Урьдчилж орсон орлого,Unearned revenue
 Бусад богино хугацаат өр төлбөр,Other short-term liabilities
-Богино хугацаат өр төлбөрийн дүн,Total short-term liabilities
+Богино хугацаат өр төлбөрийн дүн,Total current liabilities
 Урт хугацаат зээл,Long-term debt
 Хойшлогдсон татварын өр,Deferred income tax
 Бусад урт хугацаат өр төлбөр,Other long-term liabilities
@@ -37,4 +37,3 @@
 Хөрөнгийн дахин үнэлгээний нэмэгдэл,Diluted stocks
 Хуримтлагдсан ашиг,Retained earnings
 Эздийн өмчийн дүн,Stockholders equity
-Өр төлбөр ба эздийн өмчийн дүн,Total liabilities and stockholders equity}
