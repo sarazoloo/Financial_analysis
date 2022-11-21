@@ -8,7 +8,7 @@ import numpy as np
 st.title("Financial Analysis App")
 st.write("Disclaimer: This is only for the analysis of general companies on the mongolian website mse.mn")
 
-uploaded_file = st.file_uploader("Choose an excel file")
+uploaded_file = st.file_uploader("Choose an excel file (.xlxs)")
 
 def get_balance_sheet(uploaded_file):
     dict_df = pd.read_excel(uploaded_file, sheet_name=['СБД','ОДТ'], usecols = 'A:E' )
