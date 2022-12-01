@@ -4,20 +4,20 @@ import pandas as pd
 import numpy as np
 
 #Load Dataset
-
+st.set_page_config(layout="wide")
 st.title("Financial Analysis App")
-st.write("Disclaimer: This is only for the analysis of general companies on the mongolian website mse.mn")
+st.write("Disclaimer: This is only for the analysis of general retail companies on the mongolian website mse.mn")
 
-uploaded_file = st.file_uploader("Please upload a financial statemen(an excel file (.xlxs)")
+uploaded_file = st.file_uploader("Choose an excel file")
 
 def get_balance_sheet(uploaded_file):
-    dict_df = pd.read_excel(uploaded_file, sheet_name=['СБД','ОДТ'], usecols = 'A:E' )
-    b_df = dict_df.get('СБД')
+    dict_df = pd.read_excel(uploaded_file, sheet_name=[0,1])
+    b_df = dict_df.get(0)
     return b_df
 
 def get_income_sheet(uploaded_file):
-    dict_df = pd.read_excel(uploaded_file, sheet_name=['СБД','ОДТ'], usecols = 'A:E')
-    i_df = dict_df.get('ОДТ')
+    dict_df = pd.read_excel(uploaded_file, sheet_name=[0,1])
+    i_df = dict_df.get(1)
     return i_df
 
     
@@ -361,15 +361,15 @@ def balance_forecast_year1():
     se_year1 = ta_year1 * ta_to_se
     
     for a in range(0, 1 + (int(ta_index))):
-        ta_forecast =  (ta_year1 * ((balance_sheet["Average %"][:a] / 100))).astype(np.int64)
+        ta_forecast =  (ta_year1 * ((balance_sheet["Average %"][:a] / 100))).astype(np.int64, errors='ignore')
     
     for b in range(int(ta_index), 1+ (int(tl_index))):
         bs = (1 + int(ta_index))
-        tl_forecast = (tl_year1 * ((balance_sheet["Average %"][bs:b]) / 100)).astype(np.int64)
+        tl_forecast = (tl_year1 * ((balance_sheet["Average %"][bs:b]) / 100)).astype(np.int64, errors='ignore')
     
     for c in range((int(tl_index)), 1 + (int(se_index))):
         ci = (1 + int(tl_index))
-        se_forecast = (se_year1 * ((balance_sheet["Average %"][ci:c]) / 100 )).astype(np.int64)
+        se_forecast = (se_year1 * ((balance_sheet["Average %"][ci:c]) / 100 )).astype(np.int64, errors='ignore')
         
     
     forecast1 = pd.concat([ta_forecast, tl_forecast, se_forecast])
@@ -431,7 +431,7 @@ def income_forecast():
     income_sheet['Average %'] = (rev_prev + rev_curr) / 2
 
     ave_rev = (rev_p + rev_c) / 2
-    rev_forecast = (ave_rev * (income_sheet["Average %"][:i] / 100)).astype(np.int64)
+    rev_forecast = (ave_rev * (income_sheet["Average %"][:i] / 100)).astype(np.int64, errors='ignore')
 
     income_sheet["Forecast"] = rev_forecast
     
