@@ -6,9 +6,10 @@ import numpy as np
 #Load Dataset
 st.set_page_config(layout="wide")
 st.title("Financial Analysis App")
-st.write("Disclaimer: This is only for the analysis of general retail companies on the mongolian website mse.mn")
+st.write("Disclaimer: This is only for the analysis of general retail companies on the mongolian website mse.mn. \n
+That includes most companies except for NBFI's, Insurance Companies, Securities and Gobi LLC ")
 
-uploaded_file = st.file_uploader("Choose an excel file")
+uploaded_file = st.file_uploader("Please upload a financial report of a company")
 
 def get_balance_sheet(uploaded_file):
     dict_df = pd.read_excel(uploaded_file, sheet_name=[0,1])
