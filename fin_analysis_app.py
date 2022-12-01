@@ -6,7 +6,7 @@ import numpy as np
 #Load Dataset
 st.set_page_config(layout="wide")
 st.title("Financial Analysis App")
-st.write("Disclaimer: This is only for the analysis of general retail companies on the mongolian website mse.mn. That includes most companies except for NBFI's, Insurance Companies, Securities and Gobi LLC ")
+st.write("Disclaimer: This is only for the analysis of general retail companies on the mongolian website mse.mn.That includes most companies except for NBFI's, Insurance Companies, Securities and Gobi LLC ")
 
 uploaded_file = st.file_uploader("Please upload a financial report of a company")
 
@@ -16,12 +16,8 @@ uploaded_file = st.file_uploader("Please upload a financial report of a company"
 #    return b_df
 
 def get_balance_sheet(uploaded_file):
-    if uploaded_file.endswith(".xls"):
-        xls = pd.ExcelFile(uploaded_file)
-        b_df = xls.parse(0)
-    else:
-        dict_df = pd.read_excel(uploaded_file, sheet_name=[0,1])
-        b_df = dict_df.get(0)
+    xls = pd.ExcelFile(uploaded_file)
+    b_df = xls.parse(0)
     return b_df
 
 
@@ -31,12 +27,8 @@ def get_balance_sheet(uploaded_file):
 #    return i_df
 
 def get_income_sheet(uploaded_file):
-    if uploaded_file.endswith(".xls"):
-        xls = pd.ExcelFile(uploaded_file)
-        i_df = xls.parse(1)
-    else:
-        dict_df = pd.read_excel(uploaded_file, sheet_name=[0,1])
-        i_df = dict_df.get(1)
+    xls = pd.ExcelFile(uploaded_file)
+    i_df = xls.parse(1)
     return i_df
 
     
