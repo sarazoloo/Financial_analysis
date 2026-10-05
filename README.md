@@ -1,7 +1,7 @@
 # Financial_analysis
 Project for intermediate python course.
 ### Upload excel file 
-This is analysis works for the general companies that are not NBFI or insurance companies that are in the mongolian website mse.mn
+This analysis works for the general companies that are not NBFI or insurance companies that are in the mongolian website mse.mn
 When you upload your excel file it will be cleaned and only the main items that will be used in the ratio analysis will remain.
 
 ### Ration Analysis
